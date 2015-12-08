@@ -1,8 +1,13 @@
 " Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+if $TERM == "xterm-256color"
+    set t_Co=256
+endif
+"set background=dark
+"colorscheme solarized
+"let g:solarized_termtrans=1
+colors koehler
 syntax enable
+hi CursorLine cterm=NONE ctermbg=236
 
 " Line wrapping and line numbers displayed
 set wrap
