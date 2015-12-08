@@ -1,8 +1,39 @@
-# Disable the startup message
-startup_message off
+# james's screenrc
 
-# Set a large scrollback buffer
-defscrollback 32000
+# my default has three shells across a horizontal split
+# one for file ops, one for vim, one for my analysis program
+# i want a vert split, but screen 4.0.2 doesn't do it natively :(
+screen -t bash
+screen -t script
+screen -t analysis
+split
+
+# 256 colours in screen
+term screen-256color
+
+
+# adds a status bar at the bottom of the screen:
+# hostname, open windows (focus highlighted), date-time
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= KW} [%H]%=%Y-%m-%d %c:%s"
+
+# adds a status bar to each view in a split screen highlighted for focus)
+# caption always "%{= mW}%?%F%{= cW}%?%f%n %t"
+caption always "%{= mW}%-Lw %?%F%{= cW}%:%{= rW}%? %n%f %t%{-} %+Lw"
+
+# binds: redefine application mode (ctrl+a) to ctrl+o, and some others
+# (i originally used bindkey with ctrl+arrows for window management, but this
+# doesn't work on macs. i used mac's terminal.app settings to get around this)
+escape ^Oo
+bind s split
+bind + resize +5
+bind - resize -5
+bind = resize =
+bind u focus up
+
+# keep some command history
+defscrollback 10000
 
 # Always start `screen` with UTF-8 enabled (`screen -U`)
 defutf8 on
