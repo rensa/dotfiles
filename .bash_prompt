@@ -102,7 +102,7 @@ fi;
 if [[ "${SSH_TTY}" ]]; then
 	hostStyle="${bold}${red}";
 else
-	hostStyle="${yellow}";
+	hostStyle="${green}";
 fi;
 
 # Set the terminal title to the current working directory.
@@ -112,7 +112,7 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\]:";
-PS1+="\[${green}\]\W"; # basename of working directory
+PS1+="\[${blue}\]\W"; # basename of working directory
 # PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
 # PS1+="\n";     # james: i prefer a single-line prompt
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)

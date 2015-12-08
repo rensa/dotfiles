@@ -5,9 +5,9 @@ endif
 "set background=dark
 "colorscheme solarized
 "let g:solarized_termtrans=1
-colors koehler
 syntax enable
-hi CursorLine cterm=NONE ctermbg=236
+colors monokai
+" hi CursorLine cterm=NONE ctermbg=236
 
 " Line wrapping and line numbers displayed
 set wrap
