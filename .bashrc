@@ -8,7 +8,7 @@
 
 case "$HOSTNAME" in
     rensa-mbp)
-        export PATH="/Users/rensa/anaconda/bin:$PATH"
+        export PATH="/Users/rensa/miniconda3/bin:$PATH"
         ;;
     tensor*|cl1n*)
         # Local definitions
