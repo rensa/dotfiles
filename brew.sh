@@ -57,6 +57,9 @@ brew install homebrew/php/php55 --with-gmp
 # install asciinema for terminal recording and uploading
 brew install asciinema
 
+# ffmpeg with some dditional libraries (call brew options ffmpeg to check them)
+brew install ffmpeg --with-freetype --with-fontconfig
+
 # Install font tools.
 # brew tap bramstein/webfonttools
 # brew install sfnt2woff
