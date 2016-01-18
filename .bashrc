@@ -9,6 +9,9 @@
 case "$HOSTNAME" in
     rensa-mbp)
         export PATH="/Users/rensa/miniconda3/bin:$PATH"
+        
+        # for opening files and folders in visual studio code
+        code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}  
         ;;
     tensor*|cl1n*)
         # Local definitions
