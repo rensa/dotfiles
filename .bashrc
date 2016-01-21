@@ -29,15 +29,15 @@ case "$HOSTNAME" in
         module load encfs/1.8.1
         ;;  
     blizzard*|maelstrom*|monsoon*|squall*)
-    # Global definitions
-    if [ -f /etc/bashrc ]; then
-        . /etc/bashrc
-    fi  
+        # Global definitions
+     if [ -f /etc/bashrc ]; then
+         . /etc/bashrc
+     fi  
 
-    # Local definitions
-    module add intel
-    module load R/3.0.3
-    module load encfs/1.8.1
+        # Local definitions
+        module add intel
+        module load R/3.2.1
+        module load encfs/1.8.1
     ;;  
     katana*|kc*)
         # Global definitions
