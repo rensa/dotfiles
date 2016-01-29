@@ -92,6 +92,9 @@ brew install ffmpeg --with-freetype --with-fontconfig
 # brew install xpdf
 # brew install xz
 
+# play with node?
+brew install node
+
 # Install other useful binaries.
 # brew install ack
 # brew install dark-mode
@@ -99,6 +102,7 @@ brew install ffmpeg --with-freetype --with-fontconfig
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
+brew install mercurial
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -112,12 +116,22 @@ brew install tree
 brew install webkit2png
 # brew install zopfli
 
+# python game dev (pygame) dependencies
+brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi
+
+# cask apps
+brew tap caskroom/cask
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
 # now for ruby stuff
 gem install jekyll -v '2.4.0'
 gem install pygments.rb
+
+# my typical python packages
+# pip install --upgrade pip
+# pip install hg+http://bitbucket.org/pygame/pygam
 
 # done!
 tput bel
