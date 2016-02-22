@@ -94,6 +94,7 @@ brew install ffmpeg --with-freetype --with-fontconfig
 
 # play with node?
 brew install node
+npm install -g http-server
 
 # Install other useful binaries.
 # brew install ack
@@ -119,6 +120,9 @@ brew install webkit2png
 # python game dev (pygame) dependencies
 brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi
 
+# anything else?
+brew install pandoc
+
 # cask apps
 brew tap caskroom/cask
 
@@ -126,7 +130,7 @@ brew tap caskroom/cask
 brew cleanup
 
 # now for ruby stuff
-gem install jekyll -v '2.4.0'
+gem install jekyll -v '3.0.2'
 gem install pygments.rb
 
 # my typical python packages
