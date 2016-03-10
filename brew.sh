@@ -120,8 +120,11 @@ brew install webkit2png
 # python game dev (pygame) dependencies
 brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi
 
-# anything else?
+# academic writing
 brew install pandoc
+brew tap timtylin/scholdoc
+brew update
+brew install scholdoc scholdoc-citeproc
 
 # cask apps
 brew tap caskroom/cask
