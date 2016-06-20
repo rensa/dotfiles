@@ -126,6 +126,10 @@ brew tap timtylin/scholdoc
 brew update
 brew install scholdoc scholdoc-citeproc
 
+# analysis tools
+brew install gcc
+brew install open-mpi
+
 # cask apps
 brew tap caskroom/cask
 
@@ -133,7 +137,7 @@ brew tap caskroom/cask
 brew cleanup
 
 # now for ruby stuff
-gem install jekyll -v '3.0.2'
+gem install jekyll -v '3.1.4'
 gem install pygments.rb
 
 # my typical python packages
