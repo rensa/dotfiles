@@ -129,6 +129,8 @@ brew install scholdoc scholdoc-citeproc
 # analysis tools
 brew install gcc
 brew install open-mpi
+brew install homebrew/science/netcdf --with-cxx-compat
+brew install homebrew/science/ncview
 
 # cask apps
 brew tap caskroom/cask
