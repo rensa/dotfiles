@@ -8,7 +8,9 @@
 
 case "$HOSTNAME" in
     rensa-mbp)
-        export PATH="/Users/rensa/miniconda3/bin:$PATH"        
+        export PATH="/Users/rensa/miniconda3/bin:$PATH"
+        export CLICOLOR=1
+        export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
         ;;
     tensor*|cl1n*)
         # Local definitions
