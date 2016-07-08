@@ -92,9 +92,11 @@ brew install ffmpeg --with-freetype --with-fontconfig
 # brew install xpdf
 # brew install xz
 
-# play with node?
+# node tools
 brew install node
 npm install -g http-server
+npm install -g cordova
+npm install -g ios-sim
 
 # Install other useful binaries.
 # brew install ack
