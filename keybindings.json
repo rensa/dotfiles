@@ -1,0 +1,9 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "shift+cmd+alt+f",           "command": "workbench.action.replaceInFiles" },
+    { "key": "cmd+shift+h",          "command": "html.preview",
+                                     "when": "editorTextFocus" },
+{ "key": "cmd+k h",              "command": "html.previewToSide",
+                                     "when": "editorTextFocus" },
+{ "key": "cmd+`",                "command": "workbench.action.terminal.toggleTerminal" }
+]
