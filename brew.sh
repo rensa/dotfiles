@@ -137,6 +137,10 @@ brew install homebrew/science/ncview
 # cask apps
 brew tap caskroom/cask
 
+# git time metrics
+brew tap git-time-metric/gtm
+brew install gtm
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
