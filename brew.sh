@@ -92,11 +92,6 @@ brew install ffmpeg --with-freetype --with-fontconfig
 # brew install xpdf
 # brew install xz
 
-# node tools
-brew install node
-npm install -g http-server
-npm install -g cordova
-npm install -g ios-sim
 
 # Install other useful binaries.
 # brew install ack
@@ -140,6 +135,15 @@ brew tap caskroom/cask
 # git time metrics
 brew tap git-time-metric/gtm
 brew install gtm
+
+# rpg maker tools
+brew install ant
+
+# node tools
+brew install node
+npm install -g http-server
+npm install -g cordova
+npm install -g ios-sim
 
 # Remove outdated versions from the cellar.
 brew cleanup
