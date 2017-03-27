@@ -64,7 +64,26 @@ case "$HOSTNAME" in
 
         # Local definitions
         ;;
-    raijin6)
+    raijin*)
+        
+        # avoid sourcing multiple times
+        [ -n "$nf_bashrc_sourced" ] && return
+
+        # source global definitions
+        if [ -f /etc/bashrc ]; then
+            . /etc/bashrc
+        fi
+
+        if [ -n "$PS1" ]; then
+
+            # stuff for interactive sessions
+            # (int. ses. aliases, noisy output, tty settings) go here
+            true
+        fi
+
+        nf_bashrc_sourced=YES
+
+
         ;;
     *)  
         echo "No bashrc definitions for $HOSTNAME"
