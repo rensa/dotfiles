@@ -7,7 +7,7 @@
 # be written outside of the case statement below.
 
 case "$HOSTNAME" in
-    rensa-mbp)
+    rensa-mbp*)
         export PATH="/Users/rensa/miniconda3/bin:$PATH"
         export CLICOLOR=1
         export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
