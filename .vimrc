@@ -6,9 +6,10 @@ endif
 "colorscheme solarized
 "let g:solarized_termtrans=1
 syntax enable
-colors koehler
-hi CursorLine cterm=NONE ctermbg=236
-hi CursorLineNr cterm=bold
+set background=dark
+colors material-theme
+hi CursorLine cterm=NONE ctermbg=238
+hi CursorLineNr cterm=bold ctermbg=238
 
 " Line wrapping and line numbers displayed
 set wrap
