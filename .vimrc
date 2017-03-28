@@ -6,8 +6,9 @@ endif
 "colorscheme solarized
 "let g:solarized_termtrans=1
 syntax enable
-colors monokai
-" hi CursorLine cterm=NONE ctermbg=236
+colors koehler
+hi CursorLine cterm=NONE ctermbg=236
+hi CursorLineNr cterm=bold
 
 " Line wrapping and line numbers displayed
 set wrap
