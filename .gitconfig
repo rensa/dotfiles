@@ -85,3 +85,7 @@
     smudge = git-lfs smudge %f
     required = true
 
+# pretty log alias
+[alias]
+    plog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
