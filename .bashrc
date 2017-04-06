@@ -79,13 +79,14 @@ case "$HOSTNAME" in
         nf_bashrc_sourced=YES
         ;;
     *)  
-        # put local shell (ie. not connected via SSH) defs here
         if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+            echo "No bashrc definitions for $HOSTNAME"
+        else
+            # put local shell (ie. not connected via SSH) defs here
             export PATH="/Users/rensa/miniconda3/bin:$PATH"
             export CLICOLOR=1
             export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
-        else
-            echo "No bashrc definitions for $HOSTNAME"
+
         fi
         ;;  
 esac
