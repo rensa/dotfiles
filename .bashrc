@@ -7,11 +7,6 @@
 # be written outside of the case statement below.
 
 case "$HOSTNAME" in
-    rensa-mbp*)
-        export PATH="/Users/rensa/miniconda3/bin:$PATH"
-        export CLICOLOR=1
-        export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
-        ;;
     tensor*|cl1n*)
         # Local definitions
         module add intel
@@ -82,10 +77,15 @@ case "$HOSTNAME" in
         fi
 
         nf_bashrc_sourced=YES
-
-
         ;;
     *)  
-        echo "No bashrc definitions for $HOSTNAME"
+        # put local shell (ie. not connected via SSH) defs here
+        if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+            export PATH="/Users/rensa/miniconda3/bin:$PATH"
+            export CLICOLOR=1
+            export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
+        else
+            echo "No bashrc definitions for $HOSTNAME"
+        fi
         ;;  
 esac
