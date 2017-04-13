@@ -139,12 +139,6 @@ brew install gtm
 # rpg maker tools
 brew install ant
 
-# node tools
-brew install node
-npm install -g http-server
-npm install -g cordova
-npm install -g ios-sim
-
 # Remove outdated versions from the cellar.
 brew cleanup
 
