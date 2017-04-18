@@ -85,7 +85,11 @@ case "$HOSTNAME" in
             # put local shell (ie. not connected via SSH) defs here
             export PATH="/Users/rensa/miniconda3/bin:$PATH"
             export CLICOLOR=1
-            export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd 
+            export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+            # source NVM
+            export NVM_DIR="$HOME/Code/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
         fi
         ;;  
