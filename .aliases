@@ -7,6 +7,7 @@ alias mael="ssh -Y z3479352@maelstrom.ccrc.unsw.edu.au"
 alias squa="ssh -Y z3479352@squall.ccrc.unsw.edu.au"
 alias ccrcpi="ssh -Y weather@129.94.166.252"
 alias raij="ssh -Y jkg561@raijin.nci.org.au"
+alias qraij="ssh -Y jkg561@raijin.nci.org.au qstat -u jkg561"
 
 # kill and remount encrypted partition on storm (requires password, obviously)
 # (useful if sth happens to the mount, causing processes to fall into uninterruptible sleep)
