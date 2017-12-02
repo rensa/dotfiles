@@ -1,22 +1,59 @@
-// Place your settings in this file to overwrite the default settings
 {
+    "window.zoomLevel": 0,
+
     // Controls the font family.
-	"editor.fontFamily": "Input Mono",
+    "editor.fontFamily": "'Input Sans', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
 
-	// Controls the font size.
-	"editor.fontSize": 12,
-    
-    // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping
-	"editor.wrappingColumn": 80,
-	
-	// Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
-	"files.associations": {
-		"*.rmd": "markdown"
-	},
+    "terminal.integrated.fontFamily": "'Input Mono', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 14,
 
-	// Controls whether the editor should render indent guides
+    // Zoom the font of the editor when using mouse wheel and holding Ctrl
+    "editor.mouseWheelZoom": true,
+
+    // Controls how lines should wrap. Can be:
+    //  - 'off' (disable wrapping),
+    //  - 'on' (viewport wrapping),
+    //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+    //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+    "editor.wordWrap": "bounded",
+
+    // Columns at which to show vertical rulers
+    // (not really useful with a non-fixed width font!)
+    // "editor.rulers": [80],
+
+    // Limit the width of the minimap to render at most a certain number of columns
+    "editor.minimap.maxColumn": 80,
+
+    // Controls the cursor style, accepted values are 'block', 'block-outline', 'line', 'line-thin', 'underline' and 'underline-thin'
+    "editor.cursorStyle": "line",
+
+    // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+
+    // Controls whether the editor should render indent guides
     "editor.renderIndentGuides": true,
 
-	// Zoom the font of the editor when using mouse wheel and holding Ctrl
-    "editor.mouseWheelZoom": true,
+    // Controls if the minimap is shown
+    "editor.minimap.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "files.associations": {
+        "*.rmd": "rmd"
+    },
+
+    // Build LaTeX after saving LaTeX source file.
+    // This property defines whether LaTeX Workshop will execute the LaTeX toolchain command(s) to build the project after new LaTeX contents are saved.
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "[rmd]": {},
+    "workbench.colorTheme": "One Dark Pro Vivid",
+
+  // Document types for which spelling will be turned ON by default.
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "rmd"
+  ]
 }
