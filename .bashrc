@@ -19,7 +19,7 @@ case "$HOSTNAME" in
 
         # Local definitions
         module add intel
-        module load R/3.2.1
+        module load R/3.3.3
         module load encfs/1.8.1
         ;;  
     blizzard*|maelstrom*|monsoon*|squall*)
@@ -30,7 +30,7 @@ case "$HOSTNAME" in
 
         # Local definitions
         module add intel
-        module load R/3.2.1
+        module load R/3.3.3
         module load encfs/1.8.1
         
         # wsupload: function for uploading weather station video
