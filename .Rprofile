@@ -20,6 +20,7 @@ q <- function (save = "no", ...) {
     library(colorout)
   }
   library(tidyverse)
+  filter = dplyr::filter
 
   # send graphics to localhost:4320
   rmote::start_rmote(port = 4320) 
