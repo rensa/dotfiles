@@ -78,6 +78,12 @@ case "$HOSTNAME" in
 
         nf_bashrc_sourced=YES
         ;;
+    rensa-sb2)
+        export CLICOLOR=1
+	    export LS_COLORS="ow=1;36;40:ex=1;33;40"
+        # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+        cd /rensa
+        ;;
     *)  
         if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
             echo "No bashrc definitions for $HOSTNAME"
@@ -85,7 +91,8 @@ case "$HOSTNAME" in
             # put local shell (ie. not connected via SSH) defs here
             export PATH="/Users/rensa/miniconda3/bin:$PATH"
             export CLICOLOR=1
-            export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+	        export LS_COLORS="ow=1;36;40:ex=1;33;40"
+            # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
             # source NVM
             export NVM_DIR="$HOME/Code/.nvm"
