@@ -7,11 +7,17 @@ alias qraij="ssh raij qstat -u jkg561"
 # (useful if sth happens to the mount, causing processes to fall into uninterruptible sleep)
 alias remount-health="killall encfs ; encfs --idle --ondemand /srv/ccrc/data48/z3479352/health ~/private/health"
 
+# alias ls to ignore NTUSER files in windows subsystem for linux
+alias ls='ls --human-readable --group-directories-first --color=auto -I NTUSER.DAT\* -I ntuser.dat\*'
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# macos-style 'open' command for windows subsystem for linux
+alias go="cmd.exe /C start
 
 #####
 # james: commands i'm interested in but aren't ready to implement
