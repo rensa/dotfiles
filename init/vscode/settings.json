@@ -1,0 +1,86 @@
+{
+    /* aesthetic settings */
+
+    // Enable/disable navigation breadcrumbs
+    // "breadcrumbs.enabled": true,
+
+    // Adjust the appearance of the window title bar. Changes require a full restart to apply.
+    "window.titleBarStyle": "custom",
+
+    "window.zoomLevel": 0,
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 14,
+
+    // Controls the font size in pixels used in the markdown preview.
+    "markdown.preview.fontSize": 16,
+
+    // Controls the font family.
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+
+    // Controls the font weight.
+    "editor.fontWeight": "300",
+
+    // Enables font ligatures
+    "editor.fontLigatures": true,
+
+    /* behaviour settings */
+
+    // Zoom the font of the editor when using mouse wheel and holding Ctrl
+    "editor.mouseWheelZoom": true,
+
+    // Controls how lines should wrap. Can be:
+    //  - 'off' (disable wrapping),
+    //  - 'on' (viewport wrapping),
+    //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+    //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+    "editor.wordWrap": "bounded",
+
+    // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+
+    // Limit the width of the minimap to render at most a certain number of columns
+    "editor.minimap.maxColumn": 80,
+
+    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty
+    "editor.rulers": [80],
+
+    // Controls how terminal reacts to right click, possibilities are "default", "copyPaste", and "selectWord". "default" will show the context menu, "copyPaste" will copy when there is a selection otherwise paste, "selectWord" will select the word under the cursor and show the context menu.
+    "terminal.integrated.rightClickBehavior": "selectWord",
+
+    /* settings for using wsl */
+
+    // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu).
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
+
+    // The default end of line character. Use \n for LF and \r\n for CRLF.
+    "files.eol": "\n",
+
+    // theme settings
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "materialTheme.fixIconsRunning": false,
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+
+    /* extension settings */
+
+    // Build LaTeX after saving LaTeX source file.
+    // This property defines whether LaTeX Workshop will execute the LaTeX toolchain command(s) to build the project after new LaTeX contents are saved.
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+
+    // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+
+    // Document types for which spelling will be turned ON by default.
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "rmd"
+    ],
+    "explorer.confirmDelete": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+}
