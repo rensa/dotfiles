@@ -79,9 +79,20 @@ case "$HOSTNAME" in
         nf_bashrc_sourced=YES
         ;;
     rensa-sb2)
+        echo "Interacting locally on rensa-sb2"
         export CLICOLOR=1
 	    export LS_COLORS="ow=1;36;40:ex=1;33;40"
         # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+        export SCREENDIR=$HOME/.screen
+
+        # source NVM
+        export NVM_DIR="$HOME/Code/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+        # local gem installation
+        export GEM_HOME="$HOME/gems"
+        export PATH="$HOME/gems/bin:$PATH"
+
         cd /rensa
         ;;
     *)  
@@ -89,15 +100,16 @@ case "$HOSTNAME" in
             echo "No bashrc definitions for $HOSTNAME"
         else
             # put local shell (ie. not connected via SSH) defs here
-            export PATH="/Users/rensa/miniconda3/bin:$PATH"
+            # export PATH="/Users/rensa/miniconda3/bin:$PATH"
             export CLICOLOR=1
 	        export LS_COLORS="ow=1;36;40:ex=1;33;40"
             # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
-            # source NVM
-            export NVM_DIR="$HOME/Code/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 
         fi
         ;;  
 esac
+
+# added by Miniconda3 installer
+# export PATH="/home/rensa/miniconda3/bin:$PATH"

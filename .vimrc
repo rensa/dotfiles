@@ -96,4 +96,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+" splits
+set splitbelow
+set splitright
 

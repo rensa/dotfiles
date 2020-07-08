@@ -19,6 +19,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # macos-style 'open' command for windows subsystem for linux
 alias go="cmd.exe /C start"
 
+
 #####
 # james: commands i'm interested in but aren't ready to implement
 #####
